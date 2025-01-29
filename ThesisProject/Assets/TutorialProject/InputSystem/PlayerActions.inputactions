@@ -1,32 +1,32 @@
 {
-    "name": "F_MovementPlayerActions",
+    "name": "PlayerActions",
     "maps": [
         {
             "name": "PlayerActionMap",
-            "id": "05d42d95-2bd5-4b26-aabc-4d7c5ecae102",
+            "id": "29e4ade8-0882-4237-9f86-4338e8a5d1ff",
             "actions": [
                 {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "ce428fc2-028d-4745-b171-9a9ee9bcdf44",
+                    "id": "89a59bf4-ce33-43e0-91b0-5a7b67429560",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "MovementStop",
+                    "name": "MovmentStop",
                     "type": "Value",
-                    "id": "4d0819e7-8f8b-47dc-8933-79b011cb03b4",
+                    "id": "032593ed-f110-47d1-81ca-a84061272712",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Look",
                     "type": "Value",
-                    "id": "cc36a769-d09c-4b63-b95e-c5a5317822b2",
+                    "id": "3401d517-8e37-495d-80c1-fb977d775fdc",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -35,8 +35,19 @@
             ],
             "bindings": [
                 {
+                    "name": "",
+                    "id": "eedee796-9501-4009-85f4-d81aa7c28017",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "WASD",
-                    "id": "d5f36cdc-abd9-4d5d-a5e7-1e0fc65cd285",
+                    "id": "2f036fdc-fa83-479a-9502-0a5d8745f48c",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -47,7 +58,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "62b4528c-f84e-406b-a4b8-660ae26b6d79",
+                    "id": "0cc6e181-d6c2-4d66-8153-41b99288013b",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -58,7 +69,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "da1bfa47-1a1d-4ada-8980-80aec55bcd7f",
+                    "id": "e833fd2a-56bd-4e5b-894c-1a07fac7137a",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -69,7 +80,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "73ec88f1-00f6-4feb-8813-cd5b7fd0c208",
+                    "id": "bf1baa0f-4bf5-43f1-b5f5-9eed2f239a19",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -80,7 +91,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "2bb61e65-ff69-4f3f-9a05-6941c050dfc8",
+                    "id": "bc44a6a9-ce8b-47c0-a0c9-f54da652730a",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -91,7 +102,73 @@
                 },
                 {
                     "name": "",
-                    "id": "6629f5d9-2bfa-4afb-a6a7-d72b80faa70b",
+                    "id": "0f43a7c2-f336-4f6e-b5fe-1f7300a85df5",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovmentStop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "WASD",
+                    "id": "85830fd7-9fd6-4ddd-b799-ada1593c76a2",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovmentStop",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "b60826d0-4caa-415b-b0f3-f37101e067f0",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovmentStop",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "576ee65d-e764-4737-bbfe-de66ef0430ef",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovmentStop",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "ed327918-9849-4430-ab0a-32d9efb332d2",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovmentStop",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b551a79b-ec71-4709-ae93-7e4b1282fb40",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovmentStop",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "923d27ef-e655-4f87-ac31-00354897560a",
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
@@ -99,61 +176,6 @@
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "WASD",
-                    "id": "3cbc7280-ece6-4f7f-945e-b4a57e503bcd",
-                    "path": "2DVector",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementStop",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "baed035a-b81b-4e09-8f63-a8afaa5d3795",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementStop",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "64a14209-fb41-4ab4-a73d-ef0e92196dd8",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementStop",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "24af9b2b-fd80-4d00-86fe-58bfbe8d9548",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementStop",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "bd4a07b8-c87d-4282-ba97-c05a1e2c9a3f",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MovementStop",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         }
