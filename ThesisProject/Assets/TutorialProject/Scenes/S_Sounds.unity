@@ -22220,11 +22220,12 @@ GameObject:
   - component: {fileID: 66337556601036969}
   - component: {fileID: 4352322907922640820}
   - component: {fileID: 5038359516735546169}
-  - component: {fileID: 2570956268031337953}
+  - component: {fileID: 5038359516735546173}
   - component: {fileID: 1531856178991740269}
   - component: {fileID: 2596968334793558581}
   - component: {fileID: 5038359516735546171}
   - component: {fileID: 5038359516735546170}
+  - component: {fileID: 5038359516735546172}
   m_Layer: 0
   m_Name: S_PlayerCharacterPrefab
   m_TagString: Player
@@ -22997,20 +22998,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2570956268031337953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350168544009195219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245dbc0116b9130428bae10d2eb1d2e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: 0, z: 0}
-  movementSpeed: 150
 --- !u!23 &2574274425154980866
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24262,6 +24249,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5038359516735546172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350168544009195219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1e0084b6254604ab55818fcfe7daea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5038359516735546173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350168544009195219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989856f652b48464a9e5431b63f6dbf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementInput: {x: 0, y: 0, z: 0}
+  movementVector: {x: 3, y: 0, z: 3}
+  movementSpeed: 5
+  playerCamera: {fileID: 1543898563}
+  jumpForce: 5
 --- !u!33 &5078982423501285572
 MeshFilter:
   m_ObjectHideFlags: 0

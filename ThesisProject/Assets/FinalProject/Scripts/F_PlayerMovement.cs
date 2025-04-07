@@ -12,12 +12,28 @@ public class F_PlayerMovement : MonoBehaviour
     public Vector3 movementVector; // Stores the resulting movement vector
     [SerializeField] private float movementSpeed; // Movement speed of the character
 
+    [Header("Jump")]
+    [SerializeField] float jumpForce = 5f;
+
 
     void Start()
     {
         characterRB = GetComponent<Rigidbody>(); // Getting the Rigidbody component attached to the character
     }
+    private bool IsGrounded()
+    {
+        return Mathf.Abs(characterRB.velocity.y) < 0.01f; //check if the player is on the ground
+    }
 
+    private void OnJump(InputValue input)
+    {
+        if (IsGrounded())
+        {
+            characterRB.velocity = new Vector3(characterRB.velocity.x, 0, characterRB.velocity.z); //reset y velocity to 0
+            characterRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); //apply jump force
+            Debug.Log("Jump"); //debug log
+        }
+    }
     void FixedUpdate()
     {
        
